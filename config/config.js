@@ -13,7 +13,7 @@ var rootPath = path.resolve(__dirname + '../..')
 module.exports = {
   development: {
     root: rootPath,
-    db: 'mongodb://localhost/your_app_db_dev'
+    db: 'mongodb://changer:changer@ds043168.mongolab.com:43168/heroku_app17798753'
   },
   test: {
     root: rootPath,

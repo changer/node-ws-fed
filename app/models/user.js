@@ -12,10 +12,10 @@ var userPlugin = require('mongoose-user')
  */
 
 var UserSchema = new Schema({
-  name: { type: String, default: '' },
-  email: { type: String, default: '' },
-  hashed_password: { type: String, default: '' },
-  salt: { type: String, default: '' }
+  name: { type: String },
+  email: { type: String },
+  hashed_password: { type: String },
+  salt: { type: String }
 })
 
 /**

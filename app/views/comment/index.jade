@@ -1,0 +1,29 @@
+extends ../layouts/default
+
+block main
+  h2.
+    Add new comment
+
+block content 
+  form(method="post")
+    table
+      tr
+        td.
+          User Name
+        td
+          input(type="text" name="user")
+      tr
+        td.
+          Comment
+        td 
+          textarea(name="text")
+      tr
+        td
+          input(type="submit" value="Add")
+
+
+  .comments
+    - each comment in comments
+      .comment
+        p.
+          On #{comment.createdOn} #{comment.user} said #{comment.text}
